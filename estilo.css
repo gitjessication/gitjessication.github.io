@@ -1,4 +1,6 @@
-body {
+*{
+    margin: 0;
+}body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
@@ -38,7 +40,7 @@ body {
 
 .text-button {
     margin-block-end: 8px;
-    padding-left: 370px;
+    padding-left: 300px;
     font-weight: bold;
 
 }
@@ -247,7 +249,6 @@ button {
     padding: 10px;
     border: 3px solid #ffffff;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
 }
@@ -280,13 +281,13 @@ button {
     border: none;
     background: none;
     color: #ffffff;
-    width: 2050px;
+    width: 686px;
     height: 225px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 312px;
+    left: 818px;
     transform: translate(-50%, -50%);
     display: flex;
     place-content: center;
@@ -299,19 +300,17 @@ button {
     inset: 0;
     font-size: 15px;
     line-height: -1;
-    animation: text-rotation 5s linear infinite;
-    margin-left: 175px;
-    margin-bottom: 75px;
+    animation: text-rotation 5s linear infinite;    /* margin-bottom: 75px; */
 }
 
 .circle__text>span {
     position: absolute;
     transform: rotate(calc(13deg * var(--index)));
-    inset: 2px;
+    inset: 50px;
 }
 
 @keyframes text-rotation {
     to {
-        rotate: 200deg;
+        rotate: 400deg;
     }
 }
